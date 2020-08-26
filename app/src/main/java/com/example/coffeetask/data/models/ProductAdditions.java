@@ -1,15 +1,17 @@
 package com.example.coffeetask.data.models;
 
+import java.util.List;
+
 public class ProductAdditions {
-    private ProductAdditionsSubAdd[] subAdd;
+    private List<ProductAdditionsSubAdd> subAdd;
     private int id;
     private String title;
 
-    public ProductAdditionsSubAdd[] getSubAdd() {
+    public List<ProductAdditionsSubAdd> getSubAdd() {
         return this.subAdd;
     }
 
-    public void setSubAdd(ProductAdditionsSubAdd[] subAdd) {
+    public void setSubAdd(List<ProductAdditionsSubAdd> subAdd) {
         this.subAdd = subAdd;
     }
 

@@ -3,7 +3,7 @@ package com.example.coffeetask.data.models;
 public class ProductDetailsResponse {
     private String Status;
     private int code;
-    private ProductModel productModel;
+    private ProductModel Product;
 
     public String getStatus() {
         return this.Status;
@@ -22,10 +22,10 @@ public class ProductDetailsResponse {
     }
 
     public ProductModel getProductModel() {
-        return this.productModel;
+        return this.Product;
     }
 
-    public void setProductModel(ProductModel productModel) {
-        this.productModel = productModel;
+    public void setProductModel(ProductModel Product) {
+        this.Product = Product;
     }
 }

@@ -5,6 +5,7 @@ public class ProductAdditionsSubAdd {
     private int subAdd;
     private int id;
     private String title;
+    private boolean selected;
 
     public String getImg() {
         return this.img;
@@ -36,5 +37,13 @@ public class ProductAdditionsSubAdd {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public boolean isSelected() {
+        return selected;
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected = selected;
     }
 }

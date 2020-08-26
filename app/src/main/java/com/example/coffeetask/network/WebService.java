@@ -1,6 +1,7 @@
 package com.example.coffeetask.network;
 
 import com.example.coffeetask.data.api.ProductApi;
+import com.example.coffeetask.utilites.Urls;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -16,7 +17,6 @@ public class WebService {
     private ProductApi api;
 
     public WebService() {
-        String BaseUrl = "https://smamenu.com";
         Gson gson = new GsonBuilder()
                 .setLenient()
                 .create();
@@ -31,7 +31,7 @@ public class WebService {
 
         Retrofit retrofit = new Retrofit.Builder().client(client)
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl(BaseUrl)
+                .baseUrl(Urls.baseUrl)
                 .build();
 
         api = retrofit.create(ProductApi.class);

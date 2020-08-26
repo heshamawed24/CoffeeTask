@@ -1,5 +1,7 @@
 package com.example.coffeetask.data.models;
 
+import java.util.List;
+
 public class ProductModel {
     private String img;
     private String description;
@@ -8,7 +10,7 @@ public class ProductModel {
     private String title;
     private String created_by;
     private String confirm;
-    private ProductAdditions[] Additions;
+    private List<ProductAdditions> Additions;
     private String updated_at;
     private String price;
     private String cat_id;
@@ -71,11 +73,11 @@ public class ProductModel {
         this.confirm = confirm;
     }
 
-    public ProductAdditions[] getAdditions() {
+    public List<ProductAdditions> getAdditions() {
         return this.Additions;
     }
 
-    public void setAdditions(ProductAdditions[] Additions) {
+    public void setAdditions(List<ProductAdditions> Additions) {
         this.Additions = Additions;
     }
 

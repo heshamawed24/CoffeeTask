@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CoffeeTask</string>
+    <string name="currency">ريال</string>
+    <string name="btn_continue">متابعه</string>
+    <string name="to_pay">المجموع النهائي</string>
+    <string name="tax_value">قيمة الضريبه</string>
+    <string name="total">اجمالي</string>
 </resources>
